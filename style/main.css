@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
+
+/* || RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* || GENERAL STYLES */
+
+body {
+  font: 1.5rem 'Caveat', cursive;
+  min-height: 100vh;
+
+  background-color: #475569;
+  background-image: radial-gradient(whitesmoke, #475569);
+  display: flex;
+  flex-direction: column;
+}
+
+header, nav, main, footer {
+  display: grid;
+  place-content: center;
+  grid-template-columns: 100%;
+  text-align: center;
+}
+
+header, footer {
+  color: whitesmoke;
+  background-color: #1E293B;
+  position: sticky;
+}
+
+header {
+  top: 0;
+}
+
+nav {
+  background-color: #fff;
+  color: darkslategrey;
+  padding: .5rem;
+  border-bottom: 2px solid darkslategrey;
+}
+
+main {
+  flex-grow: 1;
+  /* padding: 1rem; */
+}  
+
+footer {
+  bottom: 0;
+}
+
+/* || SMALL */
+
+@media screen and (min-width: 576px) {
+  body {
+    background-color: aquamarine;
+    background-image: radial-gradient(whitesmoke, aquamarine);
+  }
+
+  nav {
+    display: none;
+  }
+}
+
+/* || MEDIUM */
+
+@media screen and (min-width: 768px) {
+  body {
+    background-color: lightpink;
+    background-image: radial-gradient(whitesmoke, lightpink);
+  }
+}
+
+/* || LARGE */
+
+@media screen and (min-width: 992px) {
+  body {
+    background-color: cornflowerblue;
+    background-image: radial-gradient(whitesmoke, cornflowerblue);
+  }
+}
+
+/* || XL */
+
+@media screen and (min-width: 1200px) {
+  body {
+    background-color: firebrick;
+    background-image: radial-gradient(whitesmoke, firebrick);
+  }
+}
+
+/* || MOBILE DEVICE LANDSCAPE */
+
+@media screen and (max-height: 425px) and (min-aspect-ratio: 7/4) {
+  body {
+    background-color: rebeccapurple;
+    background-image: radial-gradient(whitesmoke, rebeccapurple);
+  }
+
+  h1, h2 {
+    font-size: 1.5rem;
+  }
+
+  nav {
+    display: none;
+  }
+}
